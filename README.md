@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ E-Commerce Website
 
-## Getting Started
+A modern and fully-functional e-commerce website built using cutting-edge technologies like **Next.js 15**, **Tailwind CSS**, **Shadcn UI**, **Stripe**, **Sanity**, and **Clerk** for seamless user experience, headless CMS integration, and secure authentication.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Tech             | Purpose                                      |
+| ---------------- | -------------------------------------------- |
+| **Next.js 15**   | Full-stack React framework for SSR & routing |
+| **Tailwind CSS** | Utility-first CSS for styling                |
+| **Shadcn UI**    | Pre-built accessible UI components           |
+| **Stripe**       | Payment integration for secure checkout      |
+| **Sanity**       | Backend as a headless CMS for product data   |
+| **Clerk**        | Authentication (Gmail login, passkeys)       |
+| **Zod**          | for the validation of data                   |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ Features
 
-## Learn More
+- 🛒 Product Listing & Detail Pages
+- 🧺 Cart Management
+- 🔐 Authentication with Clerk (Gmail login & passkeys)
+- 💳 Secure Payment using Stripe
+- 🧑‍💼 Admin Dashboard (Optional)
+- 📦 CMS-powered content management with Sanity
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Project Structure
