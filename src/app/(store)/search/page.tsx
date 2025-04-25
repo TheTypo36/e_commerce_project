@@ -3,11 +3,8 @@ import { searchProductsByName } from "@/sanity/lib/Products/searchProductsByName
 import ProductGrid from "@/components/ProductGrid";
 
 export default async function SearchPage({
-  params,
   searchParams,
 }: {
-  // Use 'Record<string, never>' instead of '{}' to fix the ESLint error
-  params: Record<string, never>;
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
   // Handle the query parameter safely
