@@ -3,6 +3,7 @@ import React from "react";
 
 async function SaleBanner() {
   const sales = await getActiveSaleByCouponCode("HAPPYDIWALI50");
+  if (!sales?.isActive) return null;
 
   return <div>{sales?.title}</div>;
 }
