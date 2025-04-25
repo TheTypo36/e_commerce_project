@@ -4,7 +4,7 @@ import React from "react";
 async function SaleBanner() {
   const sales = await getActiveSaleByCouponCode("HAPPYDIWALI50");
 
-  return <div>SaleBanner</div>;
+  return <div>{sales?.title}</div>;
 }
 
 export default SaleBanner;

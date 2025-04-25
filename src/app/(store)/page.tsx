@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { getAllProducts } from "../../sanity/lib/Products/getAllProducts";
 import ProductsView from "@/components/ProductsView";
 import { getAllCategories } from "@/sanity/lib/Products/getAllCategories";
