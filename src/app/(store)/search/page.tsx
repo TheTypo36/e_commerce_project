@@ -2,14 +2,14 @@ import React from "react";
 import { searchProductsByName } from "@/sanity/lib/Products/searchProductsByName";
 import ProductGrid from "@/components/ProductGrid";
 
-type SearchPageProps = {
-  searchParams?: {
-    query?: string;
-  };
-};
-
-async function SearchPage({ searchParams }: SearchPageProps) {
-  const query = searchParams?.query ?? "";
+// Correct type definition for searchParams in Next.js pages
+async function SearchPage({
+  searchParams,
+}: {
+  searchParams: { query: string };
+}) {
+  // Access the query directly from searchParams
+  const query = searchParams.query;
 
   const products = await searchProductsByName(query);
 
@@ -27,7 +27,6 @@ async function SearchPage({ searchParams }: SearchPageProps) {
       </div>
     );
   }
-
   return (
     <div className="flex flex-col items-center justify-top min-h-screen bg-gray-100 p-4">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-4xl">
