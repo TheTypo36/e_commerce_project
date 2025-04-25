@@ -2,12 +2,12 @@ import React from "react";
 import { searchProductsByName } from "@/sanity/lib/Products/searchProductsByName";
 import ProductGrid from "@/components/ProductGrid";
 
-// Remove all custom type definitions and use only the basic props structure
 export default async function SearchPage({
   params,
   searchParams,
 }: {
-  params: {};
+  // Use 'Record<string, never>' instead of '{}' to fix the ESLint error
+  params: Record<string, never>;
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
   // Handle the query parameter safely
@@ -20,7 +20,7 @@ export default async function SearchPage({
         : "";
 
   const products = await searchProductsByName(query);
-  console.log(params);
+
   if (!products || products.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
