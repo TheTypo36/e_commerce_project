@@ -20,7 +20,7 @@ export default async function SearchPage({
         : "";
 
   const products = await searchProductsByName(query);
-
+  console.log(params);
   if (!products || products.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
