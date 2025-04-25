@@ -131,13 +131,3 @@ It features a seamless shopping experience, secure authentication, headless CMS 
 BCA Student | MERN Stack Developer | Open Source Enthusiast
 
 ---
-
-# 🏁
-
-Would you also like me to help you design a **small badge section** like:
-
-```markdown
-![Next.js](https://img.shields.io/badge/Next.js-15-black)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Blue)
-![Stripe](https://img.shields.io/badge/Stripe-Payments-blueviolet)
-```
