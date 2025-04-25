@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { searchProductsByName } from "@/sanity/lib/Products/searchProductsByName";
 import ProductGrid from "@/components/ProductGrid";
