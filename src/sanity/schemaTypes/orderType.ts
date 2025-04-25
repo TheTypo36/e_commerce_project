@@ -1,9 +1,4 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
-import { TrolleyIcon } from "@sanity/icons";
-import { blockContentType } from "./blockContentType";
-import { categoryType } from "./categoryType";
-import { productType } from "./productType";
-import { salesType } from "./saleType";
 import { BasketIcon } from "@sanity/icons";
 export const orderType = defineType({
   name: "orderType",
