@@ -2,18 +2,20 @@ import React from "react";
 import { searchProductsByName } from "@/sanity/lib/Products/searchProductsByName";
 import ProductGrid from "@/components/ProductGrid";
 
-async function SearchPage({
-  searchParams,
-}: {
-  searchParams: { params: Promise<{ query: string }> };
-}) {
-  const { query } = await searchParams.params;
+type SearchPageProps = {
+  searchParams?: {
+    query?: string;
+  };
+};
+
+async function SearchPage({ searchParams }: SearchPageProps) {
+  const query = searchParams?.query ?? "";
 
   const products = await searchProductsByName(query);
 
   if (!products.length) {
     return (
-      <div className="flex flex-col items-center justify-top min-h-screem bg-gray-100 p-4">
+      <div className="flex flex-col items-center justify-top min-h-screen bg-gray-100 p-4">
         <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-4xl">
           <h1 className="text-3xl font-bold mb-6 text-center">
             No products found for: {query}
@@ -25,8 +27,9 @@ async function SearchPage({
       </div>
     );
   }
+
   return (
-    <div className="flex flex-col items-center justify-top min-h-screem bg-gray-100 p-4">
+    <div className="flex flex-col items-center justify-top min-h-screen bg-gray-100 p-4">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-4xl">
         <h1 className="text-3xl font-bold mb-6 text-center">
           Search Results for: {query}
