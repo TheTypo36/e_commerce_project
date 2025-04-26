@@ -1,6 +1,6 @@
 import { ProductType } from "../../sanity.types";
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { persist, PersistOptions } from "zustand/middleware";
 
 export interface BasketItem {
   product: ProductType;
@@ -17,8 +17,18 @@ interface BasketState {
   getGrouptedItems: () => BasketItem[];
 }
 
-const useBasketStore = create<BasketState>(
-  persist(
+type BasketPersist = (
+  config: StateCreator<BasketState>,
+  options: PersistOptions<BasketState>
+) => StateCreator<BasketState>;
+
+// Define the persist storage configuration
+const persistConfig: PersistOptions<BasketState> = {
+  name: "basket-store",
+};
+
+const useBasketStore = create<BasketState>()(
+  (persist as BasketPersist)(
     (set, get) => ({
       items: [],
       addItem: (product) =>
@@ -66,9 +76,7 @@ const useBasketStore = create<BasketState>(
       },
       getGrouptedItems: () => get().items,
     }),
-    {
-      name: "basket-store",
-    }
+    persistConfig
   )
 );
 
