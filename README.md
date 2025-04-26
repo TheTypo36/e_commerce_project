@@ -1,10 +1,6 @@
-Of course! Here's a **more polished, professional**, and **internship-level** version of your README:
-
----
-
 # 🛍️ TheTypoShop — Modern E-Commerce Web App
 
-A **fully-functional** and **real-time** e-commerce platform, built using modern technologies like **Next.js 15**, **Tailwind CSS**, **Stripe**, **Sanity**, and **Clerk**.  
+A **fully-functional** and **real-time** e-commerce platform, built using modern technologies like **Next.js 15**, **Tailwind CSS**, **RazorPay**, **Sanity**, and **Clerk**.  
 It features a seamless shopping experience, secure authentication, headless CMS integration, dynamic product management, and real-time stock updates — all with full **type safety** via **TypeScript**.
 
 ---
@@ -17,7 +13,7 @@ It features a seamless shopping experience, secure authentication, headless CMS 
 | **TypeScript**    | Type safety across frontend and backend                         |
 | **Tailwind CSS**  | Utility-first, highly customizable CSS framework                |
 | **Shadcn UI**     | Accessible, beautiful UI components out-of-the-box              |
-| **Stripe**        | Secure online payments and checkout                             |
+| **Razorpay**      | Secure online payments and checkout                             |
 | **Sanity**        | Headless CMS for real-time product & category management        |
 | **Clerk**         | Authentication system (Gmail login, passkeys)                   |
 | **Zod**           | Schema validation and form handling                             |
@@ -70,7 +66,21 @@ It features a seamless shopping experience, secure authentication, headless CMS 
 
 ## 📸 Screenshots
 
-> _(Add a few screenshots showing homepage, product page, checkout page, etc.)_
+### 🏠 Homepage
+
+![Homepage Screenshot](public/screenshots/homepage.png)
+
+### 📄 Product Detail Page
+
+![Product Detail Screenshot](public/screenshots/product-detail.png)
+
+### 🛒 Cart
+
+![Cart Screenshot](public/screenshots/cart.png)
+
+### 💳 Checkout
+
+![Checkout Screenshot](public/screenshots/checkout.png)
 
 ---
 
@@ -108,10 +118,8 @@ It features a seamless shopping experience, secure authentication, headless CMS 
 
 ## 🚀 Deployment
 
-- Frontend: [Vercel](https://vercel.com/)
-- CMS: [Sanity.io](https://www.sanity.io/)
-- Authentication: [Clerk](https://clerk.dev/)
-- Payments: [Stripe](https://stripe.com/)
+- Frontend: [Vercel](https://e-commerce-project-neon-gamma.vercel.app/)
+- CMS: [Sanity.io](https://e-commerce-project-neon-gamma.vercel.app/studio)
 
 ---
 
