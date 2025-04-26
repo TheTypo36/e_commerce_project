@@ -2,16 +2,18 @@ import React from "react";
 import { ProductType } from "../../sanity.types";
 import { Category } from "../../sanity.types";
 import ProductGrid from "./ProductGrid";
+
+import CategorySelector from "./ui/category-selector";
 interface ProductsViewProps {
-  products: ProductType[];
   categories: Category[];
+  products: ProductType[];
 }
-const ProductsView = ({ products }: ProductsViewProps) => {
+const ProductsView = ({ products, categories }: ProductsViewProps) => {
   return (
     <div>
       {/* categories*/}
       <div className="flex flex-col">
-        {/* <CategorySelectorComponent categories={categories} /> */}
+        <CategorySelector categories={categories} />
       </div>
 
       {/* products */}
