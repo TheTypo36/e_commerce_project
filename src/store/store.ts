@@ -1,6 +1,7 @@
 import { ProductType } from "../../sanity.types";
 import { create } from "zustand";
 import { persist, PersistOptions } from "zustand/middleware";
+import { StateCreator } from "zustand"; // Add this import
 
 export interface BasketItem {
   product: ProductType;
