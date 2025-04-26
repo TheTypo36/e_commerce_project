@@ -1,11 +1,9 @@
-// Querying with "sanityFetch" will keep content automatically updated
-// Before using it, import and render "<SanityLive />" in your layout, see
-// https://github.com/sanity-io/next-sanity#live-content-api for more information.
-
+import "server-only";
 import { defineLive } from "next-sanity";
 import { client } from "./client";
 
-const token = process.env.SANITY_API_READ_TOKEN;
+const token = process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN;
+console.log("Token:", token);
 
 if (!token) {
   throw new Error("Missing SANITY_API_READ_TOKEN");

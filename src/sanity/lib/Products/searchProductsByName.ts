@@ -1,3 +1,4 @@
+import "server-only";
 import { defineQuery } from "next-sanity";
 import { sanityFetch } from "../live";
 export const searchProductsByName = async (searchParam: string) => {
